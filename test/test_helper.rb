@@ -35,4 +35,19 @@ class Test::Unit::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def create_valid_cardset()
+    Cardset.new({:name => "Valid cardset", :description => "A valid cardset for testing", :user => "somebody"})
+  end
+  
+  def create_blank_cardset()
+    Cardset.new()
+  end
+  
+  def create_valid_card()
+    Card.new({:position => 1, :cardset_id => 1})
+  end
+  
+  def create_blank_card()
+    Card.new()
+  end
 end

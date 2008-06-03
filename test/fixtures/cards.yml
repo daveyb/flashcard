@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: "1"
+  front: "Front of card"
+  back: "Back of card"
+  position: "1"
+  cardset_id: "1"
+
+two:
+  id: "2"
+  front: "Front of card"
+  back: "Back of card"
+  position: "2"
+  cardset_id: "2"

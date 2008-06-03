@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @cardset.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @cardset.description %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @cardset.url %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @cardset.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_cardset_path(@cardset) %> |
+<%= link_to 'Back', cardsets_path %>

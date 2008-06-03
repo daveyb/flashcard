@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: "1"
+  name: "My Test Cardset"
+  description: "Just a simple test cardset"
+  url: "some url"
+  user: "bob"
+
+two:
+  id: "2"
+  name: "Another valid cardset"
+  description: "Another set of cards containing valid entries"
+  url: "some url"
+  user: "betty"

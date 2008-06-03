@@ -1,0 +1,26 @@
+<h1>Listing cardsets</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Url</th>
+    <th>User</th>
+  </tr>
+
+<% for cardset in @cardsets %>
+  <tr>
+    <td><%=h cardset.name %></td>
+    <td><%=h cardset.description %></td>
+    <td><%=h cardset.url %></td>
+    <td><%=h cardset.user %></td>
+    <td><%= link_to 'Show', cardset %></td>
+    <td><%= link_to 'Edit', edit_cardset_path(cardset) %></td>
+    <td><%= link_to 'Destroy', cardset, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cardset', new_cardset_path %>
